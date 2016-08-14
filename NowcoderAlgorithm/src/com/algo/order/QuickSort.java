@@ -15,7 +15,7 @@ public class QuickSort {
 
 	private static void sort(int[] a, int left, int right) {
 		// TODO Auto-generated method stub
-		if(left < right){
+		if (left < right) {
 			int partion = partion(a, left, right);
 			sort(a, left, partion - 1);
 			sort(a, partion + 1, right);
@@ -44,7 +44,7 @@ public class QuickSort {
 		partion = i;
 		return partion;
 	}
-	
+
 	public static void main(String[] args) {
 		int[] a = { 54, 35, 48, 36, 27, 12, 44, 44, 8, 14, 26, 17, 28 };
 		int[] result = quickSort(a, 13);
